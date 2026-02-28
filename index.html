@@ -349,8 +349,98 @@
             </div>
         </section>
 
-        <!-- 4. MODULE 3: WHY STUDY HISTORY -->
+        <!-- 4. MODULE 3: DIVISÃO DO TEMPO HISTÓRICO -->
         <section id="screen-mod3" class="glass-panel p-8 md:p-12 hidden">
+            <div class="flex items-center gap-4 mb-8 border-b border-emerald-500/30 pb-4">
+                <div
+                    class="bg-emerald-900/50 p-3 rounded-xl border border-emerald-500/50 drop-shadow-[0_0_10px_rgba(16,185,129,0.5)]">
+                    <i class="fas fa-hourglass text-2xl text-emerald-400"></i>
+                </div>
+                <div>
+                    <span class="text-emerald-400 text-sm font-bold tracking-widest uppercase">Missão 3</span>
+                    <h2 class="text-3xl font-bold title-font text-white">As Idades da História</h2>
+                </div>
+            </div>
+
+            <p class="text-lg text-slate-300 mb-6 font-light leading-relaxed">
+                Para facilitar o estudo, os historiadores dividiram o tempo longo em cinco grandes fases ou "Idades".
+                Essa divisão usa marcos ocidentais, mas ainda é a mais utilizada mundialmente para nos orientar no
+                tempo:
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
+                <div
+                    class="bg-slate-800/80 p-4 border border-slate-600 rounded-xl text-center shadow-lg transition-transform hover:scale-105">
+                    <div class="text-3xl mb-2">🔥</div>
+                    <h4 class="font-bold text-[13px] text-amber-200 uppercase tracking-widest mt-2">Pré-História</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">Até a invenção da escrita (~3.500 a.C.)</p>
+                </div>
+                <div
+                    class="bg-slate-800/80 p-4 border border-slate-600 rounded-xl text-center shadow-lg transition-transform hover:scale-105">
+                    <div class="text-3xl mb-2">🏺</div>
+                    <h4 class="font-bold text-[13px] text-emerald-200 uppercase tracking-widest mt-2">Idade Antiga</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">Até a queda de Roma (476 d.C.)</p>
+                </div>
+                <div
+                    class="bg-slate-800/80 p-4 border border-slate-600 rounded-xl text-center shadow-lg transition-transform hover:scale-105">
+                    <div class="text-3xl mb-2">🏰</div>
+                    <h4 class="font-bold text-[13px] text-blue-200 uppercase tracking-widest mt-2">Idade Média</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">Até Constantinopla cair (1453 d.C.)</p>
+                </div>
+                <div
+                    class="bg-slate-800/80 p-4 border border-slate-600 rounded-xl text-center shadow-lg transition-transform hover:scale-105">
+                    <div class="text-3xl mb-2">⛵</div>
+                    <h4 class="font-bold text-[13px] text-purple-200 uppercase tracking-widest mt-2">Idade Moderna</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">Até a Revolução Francesa (1789)</p>
+                </div>
+                <div
+                    class="bg-slate-800/80 p-4 border border-slate-600 rounded-xl text-center shadow-lg col-span-2 md:col-span-1 border-indigo-500/50 bg-indigo-900/20 transition-transform hover:scale-105">
+                    <div class="text-3xl mb-2">📱</div>
+                    <h4 class="font-bold text-[11px] text-indigo-300 uppercase tracking-widest mt-2">
+                        Idade<br />Contemporânea</h4>
+                    <p class="text-[10px] text-slate-400 mt-2">De 1789 até os dias de hoje</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-slate-900/40 p-6 rounded-2xl border border-slate-700/50 relative overflow-hidden backdrop-blur-md">
+                <h3 class="text-xl font-bold text-emerald-300 mb-4 flex items-center gap-2"><i
+                        class="fas fa-question-circle"></i> Desafio Temporal:</h3>
+                <p class="mb-6 font-medium text-white">Baseado na linha do tempo acima, nós estamos vivendo atualmente
+                    em qual período histórico?</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="options-mod3">
+                    <button onclick="checkAnswer(3, this, false)"
+                        class="text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-600 transition-all font-medium text-sm">
+                        A) Na Idade Moderna, porque temos tecnologias modernas.
+                    </button>
+                    <button onclick="checkAnswer(3, this, false)"
+                        class="text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-600 transition-all font-medium text-sm">
+                        B) Na Idade Média, época dos castelos.
+                    </button>
+                    <button onclick="checkAnswer(3, this, true)"
+                        class="text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-600 transition-all font-medium text-sm">
+                        C) Na Idade Contemporânea, de 1789 até hoje.
+                    </button>
+                    <button onclick="checkAnswer(3, this, false)"
+                        class="text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-600 transition-all font-medium text-sm">
+                        D) O período atual não faz parte de nenhuma Idade.
+                    </button>
+                </div>
+            </div>
+
+            <div id="feedback-mod3" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
+
+            <div class="mt-8 flex justify-end">
+                <button id="btn-next-3" onclick="nextScreen('screen-mod3', 'screen-mod4')"
+                    class="hidden btn-primary text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2">
+                    Avançar para Missão Final <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- 5. MODULE 4: WHY STUDY HISTORY -->
+        <section id="screen-mod4" class="glass-panel p-8 md:p-12 hidden">
             <div class="flex items-center gap-4 mb-8 border-b border-amber-500/30 pb-4">
                 <div
                     class="bg-amber-900/50 p-3 rounded-xl border border-amber-500/50 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]">
@@ -378,7 +468,7 @@
             <h3 class="text-center font-bold text-lg mb-6 text-indigo-300"><i class="fas fa-puzzle-piece"></i> Complete
                 a frase de um bom Historiador:</h3>
 
-            <div class="space-y-4 max-w-2xl mx-auto" id="options-mod3">
+            <div class="space-y-4 max-w-2xl mx-auto" id="options-mod4">
                 <button onclick="checkFinalAnswer(this, false)"
                     class="w-full text-left p-6 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-600 transition-all font-medium text-slate-100 hover:border-slate-400">
                     "Eu estudo história apenas para tirar nota boa nas provas e decorar o nome de generais e reis
@@ -391,7 +481,7 @@
                 </button>
             </div>
 
-            <div id="feedback-mod3" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
+            <div id="feedback-mod4" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
         </section>
 
         <!-- 5. VICTORY / WALL OF GUARDIANS -->
@@ -547,7 +637,7 @@
         function checkFinalAnswer(button, isCorrect) {
             if (!isCorrect) {
                 button.classList.add('bg-red-900/50', 'border-red-500', 'shake-error');
-                const fb = document.getElementById('feedback-mod3');
+                const fb = document.getElementById('feedback-mod4');
                 fb.classList.remove('hidden');
                 fb.className = 'mt-6 p-4 rounded-xl text-center font-bold bg-red-900/30 border border-red-500/50 text-red-200 shake-error';
                 fb.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Isso seria um desastre temporal! Tente a outra opção.';
